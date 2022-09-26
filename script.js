@@ -31,13 +31,14 @@ $('.post-wrapper').slick({
   }
 //To show the unlock part of the page on scrolling
 $(document).scroll(function () {
+  var x = document.getElementById("my");
   var y = $(this).scrollTop();
   if (y > 50) {
-      $('.container').fadeIn(1000);
-      $('#my').style.display = 'none';
+      $('.UnlockContainer').fadeIn(1000);
+      x.style.display = 'none';
   } else {
-      $('.container').fadeOut();
-      $('.#my').style.display = 'block';
+      $('.UnlockContainer').fadeOut();
+      x.style.display = 'block';
   }
 
 });
