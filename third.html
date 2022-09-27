@@ -16,6 +16,21 @@
           <div class="progress-bar" id="myBar"></div>
         </div>
       </div>
+
+      
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="message_box" class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">NumePay Wallet</h3></div>
+              <button id="expandPill" onclick="displayInfo()">Click Here!</button>
+            <div class="field padding-bottom--24">
+              <button id="collapsePill" onclick="collapse()"><i class="fa-solid fa-xmark"></i></button>
+              <p id="value"></p>
+              </div>
+          </div>
+        </div>
+      </div>
     <div class="logo">
         <a href="index.html"><img src="images/d8a347b41db1ddee634e2d67d08798c102ef09ac.jpg" alt="logo" width="150" height="150"></a>
 
@@ -35,7 +50,7 @@
     </div>
 
     <div class="content">
-        <p id="my">The US space agency says it will try to launch its new Moon rocket on Saturday.
+        <h5>The US space agency says it will try to launch its new Moon rocket on Saturday.
 
             An attempt at a lift-off on Monday had to be scrubbed when one of four engines on the vehicle would not cool down to its required operating temperature.
             
@@ -43,7 +58,7 @@
             
             They think it is likely related to an inaccurate sensor reading and that they can develop a strategy to deal with the problem on launch day.
             
-            This involves starting the process of chilling the engines earlier in the countdown.</p>
+            This involves starting the process of chilling the engines earlier in the countdown.</h5>
             
          <p id="my"> "We've got a path forward to get to where we need to get to, to support the next launch," said John Honeycutt, who manages the Space Launch System (SLS) rocket project at Nasa.
             
@@ -66,26 +81,48 @@ On Monday, sensor readings suggested the engine was 15-20 degrees C short of whe
 Engineers believe the bleed-through system was working properly; it was just that the sensor system didn't accurately reflect real temperature conditions.</p>
     </div>
 
-    <div class="bottomMenu">
-        <div class="formbg-outer">
-            <div class="formbg">
-              <div class="formbg-inner padding-horizontal--48">
-                <h1>Thanks for reading The Times.</h1>
-            <h4>Create your free account or log in to continue reading.</h4>
-                <form id="stripe-login">
-                  <div class="field padding-bottom--24">
-                    <label for="email">Email</label>
-                    <input type="email" name="email">
-                  </div>
-                  
-                </form>
-            </div>
-        </div>  
-        <div class="field padding-bottom--24">
-            <a href="success.html"><input type="submit" name="submit" value="continue"></a>
+    <div class="UnlockContainer">
+        <h3 style = "text-align: center;border-bottom: 1px solid black;">Please select a plan to continue reading</h3>
+        <div class="pricing">
+          <div class="pricing-card">
+            <h3 class="pricing-card-heading pricing-card-heading-free">BASIC</h3>
+            <ul class="pricing-card-list">
+              <li class="pricing-card-list-item icon-yes">Enjoy unlimited news coverage.</li>
+              <li class="pricing-card-list-item icon-yes">Enjoy unlimited news coverage.</li>
+              <li class="pricing-card-list-item icon-no">Enjoy unlimited news coverage.</li>
+              <li class="pricing-card-list-item icon-no">Enjoy unlimited news coverage.</li>
               
-            </div>
-    </div>
+            </ul>
+            <p class="pricing-card-price">$40<span class="pricing-card-price-text">/mo</span></p>
+            <button class="pricing-card-btn">Buy</button>
+          </div>
+          <div class="pricing-card pricing-card-highlight">
+            <h3 class="pricing-card-heading pricing-card-heading-lite">LITE</h3>
+            <ul class="pricing-card-list">
+              <li class="pricing-card-list-item icon-yes">Enjoy unlimited news coverage.</li>
+              <li class="pricing-card-list-item icon-yes">Enjoy unlimited news coverage.</li>
+              <li class="pricing-card-list-item icon-yes">Enjoy unlimited news coverage.</li>
+              <li class="pricing-card-list-item icon-yes">Enjoy unlimited news coverage.</li>
+      
+            </ul>
+            <p class="pricing-card-price">$90<span class="pricing-card-price-text">/mo</span></p>
+            <button class="pricing-card-btn">Buy</button>
+          </div>
+          <div class="pricing-card">
+            <h3 class="pricing-card-heading pricing-card-heading-pro">NUMEPAY</h3>
+            <ul class="pricing-card-list">
+              <li class="pricing-card-list-item icon-yes">Pay with crypto - USDC, USDT, DAI, ETH and WBTC accepted</li>
+              <li class="pricing-card-list-item icon-yes">Pay for each article you unlock and read.</li>
+              <li class="pricing-card-list-item icon-yes">Access articles you unlock for a month</li>
+              <li class="pricing-card-list-item icon-yes">Share articles with friends.</li>
+            </ul>
+            <a href="#"><h7>I don’t have any crypto</h7></a>
+            <!--<h7>To start, get the NumePay wallet, load in some crypto and start paying as you go.</h7>-->
+            <!--<p class="pricing-card-price">$150<span class="pricing-card-price-text">/mo</span></p>-->
+            <button class="pricing-card-btn">Enable NumePay</button>
+          </div>
+        </div>
+      </div>
 
 
 
