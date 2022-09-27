@@ -32,15 +32,34 @@ $('.post-wrapper').slick({
 //To show the unlock part of the page on scrolling
 $(document).scroll(function () {
   var y = $(this).scrollTop();
-  if (y > 350) {
+  if (y > 250) {
       $(".UnlockContainer").fadeIn(1000);
       $("p").hide();
+      $(".row").hide();
   } else {
-      $(".UnlockContainer").fadeOut();
+      
       $("p").show();
+      $(".row").show();
   }
 
 });
+
+//Function to display info in the pill
+
+function displayInfo(){
+  document.getElementById("message_box").style.height = "300px";
+  document.getElementById("expandPill").style.display = "none";
+  document.getElementById("collapsePill").style.visibility = "visible";
+
+}
+
+// To collapse pill to original size
+function collapse() {
+  document.getElementById("message_box").style.height = "100px";
+  document.getElementById("expandPill").style.display = "inline";
+  document.getElementById("collapsePill").style.visibility = "hidden";
+}
+
 /*document.getElementById("button1").addEventListener("click", myFunction);*/
 //To increment NumePay wallet when user clicks on the button
 

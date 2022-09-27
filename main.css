@@ -58,6 +58,15 @@ body{
     margin-bottom: 10px;
 
     }
+
+#collapsePill {
+  border: none;
+  visibility: hidden;
+}
+
+#collapsePill:hover {
+  cursor: pointer;
+}
 .title{
     margin: auto;
     width: 50%;
@@ -288,6 +297,8 @@ input[type="submit"] ,#myBtn{
 .UnlockContainer {
   max-width: 1200px;
   margin: 0 auto;
+  height: 500px;
+  margin-bottom: 100px;
 }
 
 .pricing {
@@ -307,6 +318,8 @@ input[type="submit"] ,#myBtn{
   border-radius: 5px;
   box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.1);
   margin-left: 50px;
+  height: 500px;
+  
 }
 
 .pricing-card-heading {
@@ -315,7 +328,7 @@ input[type="submit"] ,#myBtn{
   line-height: 24px;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 0px;
 }
 
 .pricing-card-heading-free {
