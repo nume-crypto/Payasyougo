@@ -11,4 +11,4 @@ function displayExt() {
   });
   
 }
-document.getElementById("myBtn").addEventListener("click", displayExt);
+document.getElementById("pricing-card-btn").addEventListener("click", displayExt);

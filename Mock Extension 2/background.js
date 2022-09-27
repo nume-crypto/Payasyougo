@@ -2,8 +2,10 @@ console.log("background is running");
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     if (request.message == 'buttonClicked') {
-        chrome.tabs.create({
-            active: true,
+        chrome.windows.create({
+            focused: true,
+            width: 50,
+            height: 500,
             url:  'popup.html'
           }, null);
     // Create a new tab with options page
@@ -11,7 +13,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   });
   
 /*
-  chrome.runtime.onMessage.addListener(request => {
+  chrome.runtime.onMessage.addListener(request => { 
 
     if (request.messsage == "buttonClicked") {
   
