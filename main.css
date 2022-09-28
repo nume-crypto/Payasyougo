@@ -395,7 +395,7 @@ input[type="submit"] ,#myBtn{
   text-decoration: line-through;
 }
 
-.pricing-card-btn {
+.pricing-card-btn, #pricing-card-btn {
   width: 85%;
   font-size: 16px;
   padding: 15px;
@@ -409,7 +409,7 @@ input[type="submit"] ,#myBtn{
   transition: background-color 250ms ease-in-out;
 }
 
-.pricing-card-btn:hover {
+ #pricing-card-btn:hover {
   background-color: rgba(0, 102, 192, 1);
   ;
 }
@@ -421,9 +421,10 @@ input[type="submit"] ,#myBtn{
 }
 */
 
-.pricing-card-highlight .pricing-card-btn:hover {
+/*.pricing-card-highlight .pricing-card-btn:hover {
   background-color: #9390db;
 }
+*/
 
 .pricing-card-price {
   text-align: center;
