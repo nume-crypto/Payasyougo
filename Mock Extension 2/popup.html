@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <title>NumePay Manager</title>
-    <script src="popup.js"></script>
+    
     <script src="jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -21,7 +21,7 @@
                 <form id="stripe-login">
                   <div class="field padding-bottom--24">
                     <label for="email">Email</label>
-                    <input type="email" name="email">
+                    <input type="email" id="email" name="email">
                   </div>
                   <div class="field padding-bottom--24">
                     <div class="grid--50-50">
@@ -30,16 +30,22 @@
                         <a href="#">Forgot Password?</a>
                       </div>
                     </div>
-                    <input type="password" name="password">
+                    <input type="password" id="password" name="password">
                   </div>
                     </div>
                 </form>
             </div>
         </div>  
-        <div class="field padding-bottom--24">
-          <a href="success.html"><input type="submit" name="submit" value="Sign-in"></a>
+        <!--<div class="field padding-bottom--24">
+          <a href="success.html"><input type="submit" id="submit" name="submit" value="Sign-in"></a>
             
+          </div>-->
+
+          <div class="field padding-bottom--24">
+          <input type="submit" id="submit" name="submit" value="Sign-in" onclick="handleSubmit()"></a>
           </div>
+
         
 </body>
+<script src="popup.js"></script>
 </html>

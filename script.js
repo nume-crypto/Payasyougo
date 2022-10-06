@@ -105,3 +105,38 @@ for (var i=0,a; a=hrefs[i]; ++i) {
     hrefs[i].addEventListener('click', openLink);
 }
 */ 
+/*var hasExtension = false;
+
+chrome.runtime.sendMessage(nfhkhdepameiajalicpddgejigjnknma, { message: "version" },
+    function (reply) {
+        if (reply) {
+            if (reply.version) {
+                if (reply.version >= requiredVersion) {
+                    hasExtension = true;
+                }
+            }
+        }
+        else {
+          hasExtension = false;
+        }
+    });
+
+    if(hasExtension == true){
+      console.log('Present');
+    }
+    else if(hasExtension == false){
+      console.log('Not Present');
+    }
+    */
+    var id = "nfhkhdepameiajalicpddgejigjnknma";
+    chrome.runtime.sendMessage(id, {action: "id", value : id}, function(response) {
+        if(response && (response.id == id)) //extension installed
+        {
+            console.log(response);
+        }
+        else //extension not installed
+        {
+            console.log("Please consider installig extension");
+        }
+    
+    });

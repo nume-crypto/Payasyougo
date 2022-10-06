@@ -33,3 +33,24 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   
   })
   */
+
+ /* chrome.runtime.onMessageExternal.addListener(
+    function(request, sender, sendResponse) {
+        if (request) {
+            if (request.message) {
+                if (request.message == "version") {
+                    sendResponse({version: 1.0});
+                }
+            }
+        }
+        return true;
+    });
+
+    */
+    
+    chrome.runtime.onMessageExternal.addListener(function(msg, sender, sendResponse) {
+        if ((msg.action == "id") && (msg.value == id))
+        {
+            sendResponse({id : id});
+        }
+    }); 

@@ -21,9 +21,14 @@
         "default_icon":"icon16.png",
         "default_popup":"popup.html"
     },
+    "externally_connectable": {
+        "ids": ["*"],
+        "matches": ["file:///Payasyougo*"]
+    },
     "permissions": [
         "storage",
         "tabs"
     ]
+    
     
 }
