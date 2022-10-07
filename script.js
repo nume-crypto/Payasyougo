@@ -116,20 +116,17 @@ chrome.runtime.sendMessage(extensionId, { message: "version" },
             if (reply.version) {
                 if (reply.version >= requiredVersion) {
                     hasExtension = true;
+                    console.log('Present');
                 }
             }
         }
         else {
           hasExtension = false;
+          console.log('Not Present');
         }
     });
 
-if(hasExtension == true){
-console.log('Present');
-}
-else if(hasExtension == false){
-console.log('Not Present');
-}
+
     
 if (chrome.runtime.lastError) {
   // handle error 
