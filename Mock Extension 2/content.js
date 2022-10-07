@@ -19,6 +19,6 @@ if(document.getElementById("submit").clicked == true){
   alert("Sign in request");
 }
 
-var articleTitle = document.getElementById("articleHeading").innerHTML;
+var articleTitle = document.querySelector(".articleHeading").textContent;
 console.log(articleTitle);
 
