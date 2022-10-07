@@ -105,6 +105,8 @@ for (var i=0,a; a=hrefs[i]; ++i) {
     hrefs[i].addEventListener('click', openLink);
 }
 */ 
+
+console.log('Extension working!');
 var hasExtension = false;
 var extensionId = nfhkhdepameiajalicpddgejigjnknma;
 chrome.runtime.sendMessage(extensionId, { message: "version" },
