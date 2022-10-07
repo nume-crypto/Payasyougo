@@ -129,5 +129,5 @@ chrome.runtime.sendMessage(extensionId, { message: "version" },
 
     
 if (chrome.runtime.lastError) {
-  // handle error 
+  console.log('Errors Present');// handle error 
 }
