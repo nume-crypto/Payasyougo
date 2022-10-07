@@ -23,7 +23,7 @@
     },
     "externally_connectable": {
         "ids": ["*"],
-        "matches": ["file:///Payasyougo*"]
+        "matches": ["https://nume-crypto.github.io/*"]
     },
     "permissions": [
         "storage",
