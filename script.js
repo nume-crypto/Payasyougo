@@ -114,7 +114,7 @@ chrome.runtime.sendMessage(extensionId, { message: "version" },
     function (reply) {
         if (reply) {
             if (reply.version) {
-                if (reply.version >= 1.0) {
+                if (reply.version >= 0.0.1) {
                     hasExtension = true;
                     console.log('Present');
                 }
