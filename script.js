@@ -15,6 +15,7 @@ console.log('Date: ' + n);
 document.getElementById("showDate").innerHTML=n;
 console.log('Time: ' + time);
 
+
 $('.post-wrapper').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -63,14 +64,14 @@ function collapse() {
 /*document.getElementById("button1").addEventListener("click", myFunction);*/
 //To increment NumePay wallet when user clicks on the button
 
-var x=0;
+/*var x=0;
 document.getElementById("myBtn").addEventListener("click", showcontent);
 function showcontent() {
     x=x+0.25;
     document.getElementById("value").innerHTML = x +  "  BTC";
     document.getElementById("pagebottom").style.display="none";
 }
-
+*/
 
 
 
@@ -91,7 +92,7 @@ $('#close_message').click(function()
   $('#message_box').animate({ top:"+=15px",opacity:0 }, "slow");
 });
 */
-var hrefs = document.getElementsById("pagebottom");
+
 
 /*function openLink() {
     var href = this.href;
@@ -105,10 +106,10 @@ for (var i=0,a; a=hrefs[i]; ++i) {
     hrefs[i].addEventListener('click', openLink);
 }
 */ 
+console.log("Extension working!");
 
-console.log('Extension working!');
 var hasExtension = false;
-var extensionId = nfhkhdepameiajalicpddgejigjnknma;
+var extensionId = "nfhkhdepameiajalicpddgejigjnknma";
 chrome.runtime.sendMessage(extensionId, { message: "version" },
     function (reply) {
         if (reply) {
@@ -130,4 +131,6 @@ else if(hasExtension == false){
 console.log('Not Present');
 }
     
-    
+if (chrome.runtime.lastError) {
+  // handle error 
+}
