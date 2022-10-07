@@ -1,4 +1,6 @@
 console.log("Chrome extension go");
+var articleTitle = document.querySelector("h2").textContent;
+console.log(articleTitle);
 
 
 
@@ -19,6 +21,5 @@ if(document.getElementById("submit").clicked == true){
   alert("Sign in request");
 }
 
-var articleTitle = document.querySelector(".articleHeading").textContent;
-console.log(articleTitle);
+
 

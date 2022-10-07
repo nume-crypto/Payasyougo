@@ -107,7 +107,7 @@ for (var i=0,a; a=hrefs[i]; ++i) {
 }
 */ 
 console.log("Extension working!");
-
+var requiredVersion = 1.0;
 var hasExtension = false;
 var extensionId = "nfhkhdepameiajalicpddgejigjnknma";
 chrome.runtime.sendMessage(extensionId, { message: "version" },
