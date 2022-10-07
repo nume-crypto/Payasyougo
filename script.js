@@ -106,15 +106,15 @@ for (var i=0,a; a=hrefs[i]; ++i) {
     hrefs[i].addEventListener('click', openLink);
 }
 */ 
-console.log("Extension working!");
-var requiredVersion = 1.0;
+
+
 var hasExtension = false;
 var extensionId = "nfhkhdepameiajalicpddgejigjnknma";
 chrome.runtime.sendMessage(extensionId, { message: "version" },
     function (reply) {
         if (reply) {
             if (reply.version) {
-                if (reply.version >= requiredVersion) {
+                if (reply.version >= 1.0) {
                     hasExtension = true;
                     console.log('Present');
                 }
