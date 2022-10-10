@@ -5,6 +5,13 @@ console.log(articleTitle);
 var currentUrl = window.location.href;
 console.log("The current URL is "+currentUrl);
 
+window.addEventListener("scroll", (event) => {
+  let scroll = this.scrollY;
+  if(scroll>=250){
+    console.log("Unlock Page is active");
+  }
+});
+
 function displayExt() {
     chrome.runtime.sendMessage({message: 'buttonClicked'}, 
   function () { 
@@ -21,8 +28,4 @@ var y = document.getElementById("password").value;//To get the password
 if(document.getElementById("submit").clicked == true){
   alert("Sign in request");
 }
-
-
-
-
 
