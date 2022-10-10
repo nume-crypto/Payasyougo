@@ -132,5 +132,3 @@ if (chrome.runtime.lastError) {
   console.log('Errors Present');// handle error 
 }
 
-var currentUrl = window.location.href;
-console.log('The current URL is'+currentUrl);
