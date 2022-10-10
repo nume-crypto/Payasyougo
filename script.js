@@ -109,7 +109,7 @@ for (var i=0,a; a=hrefs[i]; ++i) {
 
 
 var hasExtension = false;
-var extensionId = "nfhkhdepameiajalicpddgejigjnknma";
+var extensionId = "dcoigpdlcpccglejpcenohjmbmgbkjjg";
 chrome.runtime.sendMessage(extensionId, { message: "version" },
     function (reply) {
         if (reply) {
