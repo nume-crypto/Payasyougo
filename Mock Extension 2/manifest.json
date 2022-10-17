@@ -25,6 +25,9 @@
         "ids": ["*"],
         "matches": ["https://nume-crypto.github.io/*"]
     },
+    "content_security_policy": {
+        "extension_page": "script-src 'self' 'sha256-yjRvStBdHoSFo1II+wblLrchKyACuNR6hb6g/vfDMsU='"
+    },
     "permissions": [
         "storage",
         "tabs"
