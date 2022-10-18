@@ -2,9 +2,9 @@ async function handleInput(){
     var consumer_email = document.querySelector('#email').value;
     var consumer_password = document.querySelector('#password').value;
     const user_client_id = "2hcb3n0k27c61q3kc8jhfov8il";
+    var walletCognitoResponse =  await fetchAwsTokensFromUserpool(consumer_email, consumer_password, user_client_id)
+}
 
-
-var walletCognitoResponse =  await fetchAwsTokensFromUserpool(consumer_email, consumer_password, user_client_id)
 async function fetchAwsTokensFromUserpool(username, password, clientId){
     console.log("invoked fetchAwsTokens ", username , "  " ,password , "  " , clientId)
     let axiosConfig = {
@@ -24,13 +24,10 @@ async function fetchAwsTokensFromUserpool(username, password, clientId){
     //console.log("Final payload ",payload)
     let json = await axios.post("https://cognito-idp.us-east-1.amazonaws.com", payload, axiosConfig);
     return json;
-}
 
 
-
-
-let idToken = walletCognitoResponse.data.AuthenticationResult.IdToken;
-
+    let idToken = walletCognitoResponse.data.AuthenticationResult.IdToken;
+//To check whether credentials are corrrect 
 let receivedStatus = walletCognitoResponse.status;
 if(receivedStatus == 200){
     console.log("successful login!");
@@ -40,3 +37,7 @@ if(receivedStatus == 200){
     }
 
 }
+
+
+
+
