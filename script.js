@@ -61,56 +61,12 @@ function collapse() {
   document.getElementById("collapsePill").style.visibility = "hidden";
 }
 
-/*document.getElementById("button1").addEventListener("click", myFunction);*/
-//To increment NumePay wallet when user clicks on the button
 
-/*var x=0;
-document.getElementById("myBtn").addEventListener("click", showcontent);
-function showcontent() {
-    x=x+0.25;
-    document.getElementById("value").innerHTML = x +  "  BTC";
-    document.getElementById("pagebottom").style.display="none";
-}
-*/
-
-
-
-/*var element = document.getElementById("bottomMenu");
-  element.style.display = "none";
-  */
-
-//scroll the message box to the top offset of browser's scrool bar
-/*$(window).scroll(function()
-{
-  $('#message_box').animate({top:$(window).scrollTop()+"px" },{queue: false, duration: 350});
-});
-
-//when the close button at right corner of the message box is clicked
-$('#close_message').click(function()
-{
-  //the messagebox gets scrool down with top property and gets hidden with zero opacity
-  $('#message_box').animate({ top:"+=15px",opacity:0 }, "slow");
-});
-*/
-
-
-/*function openLink() {
-    var href = this.href;
-    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-        var tab = tabs[0];
-        chrome.tabs.update(tab.id, {url: "chrome-extension://flndlfhjfjmninbmdmcnallkdaibccal/popup.html"});
-    });
-}
-
-for (var i=0,a; a=hrefs[i]; ++i) {
-    hrefs[i].addEventListener('click', openLink);
-}
-*/ 
 
 
 var hasExtension = false;
-var extensionId = "ammjknogcnjcfgkchbadbapalhnnmfic";
-chrome.runtime.sendMessage(extensionId, { message: "version" },
+
+chrome.runtime.sendMessage("ammjknogcnjcfgkchbadbapalhnnmfic", { message: "version" },
     function (reply) {
         if (reply) {
             if (reply.version) {
