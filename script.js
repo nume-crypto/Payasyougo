@@ -110,7 +110,7 @@ for (var i=0,a; a=hrefs[i]; ++i) {
 
 var hasExtension = false;
 var extensionId = "ammjknogcnjcfgkchbadbapalhnnmfic";
-chrome.runtime.sendMessage("ammjknogcnjcfgkchbadbapalhnnmfic", { message: "version" },
+chrome.runtime.sendMessage(extensionId, { message: "version" },
     function (reply) {
         if (reply) {
             if (reply.version) {
