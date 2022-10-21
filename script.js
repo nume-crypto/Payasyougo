@@ -109,8 +109,8 @@ for (var i=0,a; a=hrefs[i]; ++i) {
 
 
 var hasExtension = false;
-var extensionId = "dcoigpdlcpccglejpcenohjmbmgbkjjg";
-chrome.runtime.sendMessage(extensionId, { message: "version" },
+var extensionId = "ammjknogcnjcfgkchbadbapalhnnmfic";
+chrome.runtime.sendMessage("ammjknogcnjcfgkchbadbapalhnnmfic", { message: "version" },
     function (reply) {
         if (reply) {
             if (reply.version) {

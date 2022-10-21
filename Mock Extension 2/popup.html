@@ -12,7 +12,6 @@
     
     <script src="jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="popup.js"></script>
 </head>
 <body>
         <img src="Group 480.png" alt="Nume" class="Center" width="57px" height="49px">
@@ -34,9 +33,7 @@
                     </div>
                     <input type="password" id="password" name="password">
                   </div>
-                    <div class="field padding-bottom--24-3">
-                      <input type="submit" id="submit" name="submit" value="Sign-in" onclick="handleInput()">
-                    </div>
+                    
                 </form> 
             </div>
           </div>  
@@ -45,9 +42,14 @@
           <a href="success.html"><input type="submit" id="submit" name="submit" value="Sign-in"></a>
             
           </div>-->
+          <div class="field padding-bottom--24-3">
+            <button id="myButton">Sign-in</button>
+          </div>
+
 
           
+<script src="popup.js" defer></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-        
 </body>
 </html>

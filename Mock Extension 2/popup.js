@@ -1,10 +1,10 @@
-async function handleInput(){
+/*async function handleInput(){
     var consumer_email = document.querySelector('#email').value;
     var consumer_password = document.querySelector('#password').value;
     const user_client_id = "2hcb3n0k27c61q3kc8jhfov8il";
     var walletCognitoResponse =  await fetchAwsTokensFromUserpool(consumer_email, consumer_password, user_client_id)
 }
-
+*/
 async function fetchAwsTokensFromUserpool(username, password, clientId){
     console.log("invoked fetchAwsTokens ", username , "  " ,password , "  " , clientId)
     let axiosConfig = {
@@ -38,6 +38,17 @@ if(receivedStatus == 200){
 
 }
 
+console.log("hi");
+const submitRequest = document.getElementById("myButton");
+submitRequest.addEventListener("click",myFunction1);
+
+async function myFunction1(){
+    var consumer_email = document.querySelector('#email').value;
+    var consumer_password = document.querySelector('#password').value;
+    const user_client_id = "2hcb3n0k27c61q3kc8jhfov8il";
+    var walletCognitoResponse =  await fetchAwsTokensFromUserpool(consumer_email, consumer_password, user_client_id)
+  
+}
 
 
 
