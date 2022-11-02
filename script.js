@@ -68,7 +68,7 @@ console.log(articleTitle1);
 
 var hasExtension = false;
 
-chrome.runtime.sendMessage("ammjknogcnjcfgkchbadbapalhnnmfic", { message: "version" },
+/*chrome.runtime.sendMessage("ammjknogcnjcfgkchbadbapalhnnmfic", { message: "version" },
     function (reply) {
         if (reply) {
             if (reply.version) {
@@ -89,7 +89,7 @@ chrome.runtime.sendMessage("ammjknogcnjcfgkchbadbapalhnnmfic", { message: "versi
 if (chrome.runtime.lastError) {
   console.log('Errors Present');// handle error 
 }
-
+*/
 chrome.runtime.sendMessage("ammjknogcnjcfgkchbadbapalhnnmfic", { message: articleTitle1 },
     function (reply) {
         if (reply) {
