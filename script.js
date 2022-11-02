@@ -61,6 +61,8 @@ function collapse() {
   document.getElementById("collapsePill").style.visibility = "hidden";
 }
 
+var articleTitle1 = document.querySelector("h2").textContent;
+console.log(articleTitle1);
 
 
 
@@ -87,4 +89,31 @@ chrome.runtime.sendMessage("ammjknogcnjcfgkchbadbapalhnnmfic", { message: "versi
 if (chrome.runtime.lastError) {
   console.log('Errors Present');// handle error 
 }
+
+chrome.runtime.sendMessage("ammjknogcnjcfgkchbadbapalhnnmfic", { message: articleTitle1 },
+    function (reply) {
+        if (reply) {
+            if (reply.version) {
+                if (reply.version >= 0.1) {
+                    hasExtension = true;
+                    console.log('Present');
+                }
+            }
+        }
+        else {
+          hasExtension = false;
+          console.log('Not Present');
+        }
+    });
+
+
+    
+if (chrome.runtime.lastError) {
+  console.log('Errors Present');// handle error 
+}
+
+
+
+
+
 
