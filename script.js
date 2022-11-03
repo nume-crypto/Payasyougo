@@ -67,8 +67,8 @@ console.log(articleTitle1);
 
 
 var hasExtension = false;
-
-/*chrome.runtime.sendMessage("ammjknogcnjcfgkchbadbapalhnnmfic", { message: "version" },
+var sentTitle = false;
+chrome.runtime.sendMessage("ammjknogcnjcfgkchbadbapalhnnmfic", { message: "version" },
     function (reply) {
         if (reply) {
             if (reply.version) {
@@ -89,20 +89,20 @@ var hasExtension = false;
 if (chrome.runtime.lastError) {
   console.log('Errors Present');// handle error 
 }
-*/
+
 chrome.runtime.sendMessage("ammjknogcnjcfgkchbadbapalhnnmfic", { message: articleTitle1 },
     function (reply) {
         if (reply) {
             if (reply.version) {
-                if (reply.version >= 0.1) {
-                    hasExtension = true;
-                    console.log('Present');
+                if (reply.version = 2.0) {
+                    sentTitle = true;
+                    console.log('Title retreived');
                 }
             }
         }
         else {
-          hasExtension = false;
-          console.log('Not Present');
+          sentTitle = false;
+          console.log('Could not retreive title');
         }
     });
 
