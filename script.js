@@ -68,7 +68,7 @@ console.log(articleTitle1);
 
 var hasExtension = false;
 var sentTitle = false;
-chrome.runtime.sendMessage("opaabnppoeedbelaiiofilbnolbnlfob", { message: "version" },
+chrome.runtime.sendMessage("ammjknogcnjcfgkchbadbapalhnnmfic", { message: "version" },
     function (reply) {
         if (reply) {
             if (reply.version) {
@@ -90,7 +90,7 @@ if (chrome.runtime.lastError) {
   console.log('Errors Present');// handle error 
 }
 
-chrome.runtime.sendMessage("opaabnppoeedbelaiiofilbnolbnlfob", { message: articleTitle1 },
+chrome.runtime.sendMessage("ammjknogcnjcfgkchbadbapalhnnmfic", { message: articleTitle1 },
     function (reply) {
         if (reply) {
             if (reply.version) {
